@@ -19,47 +19,4 @@
 | ФИО | Геращенко Кирилл С. |
 |-----|---------------------|
 
----
-
-## 🛠️ Технологии (предполагаемые)
-
-| Категория | Технологии |
-|-----------|-------------|
-| Frontend | HTML, CSS, JavaScript / React / Vue |
-| Backend | Python (Django / Flask) / PHP / Node.js |
-| Database | PostgreSQL / MySQL / SQLite |
-| Другое | Bootstrap / Tailwind, Git |
-
-> *Список можно уточнить после выбора стека*
-
----
-
-## 📂 Планируемая структура
-
-
-rieltor-frontend/
-├── src/
-│   ├── components/
-│   │   ├── Auth/
-│   │   │   ├── Login.js          
-│   │   │   └── Register.js       
-│   │   ├── Clients/
-│   │   │   ├── ClientList.js     
-│   │   │   └── ClientForm.js     
-│   │   ├── Realtors/
-│   │   │   └── RealtorList.js    
-│   │   ├── Layout/
-│   │   │   └── Navbar.js         
-│   │   └── Dashboard/
-│   │       └── Dashboard.js      
-│   ├── contexts/
-│   │   └── AuthContext.js        
-│   ├── services/
-│   │   └── api.js                
-│   ├── App.js                    
-│   └── index.js                  
-├── package.json
-└── public/
-    └── index.html
-
 
