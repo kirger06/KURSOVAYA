@@ -1,25 +1,60 @@
-﻿namespace Rieltors.API.Models
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
+
+namespace Rieltors.API.Models
 {
     public class Client
     {
+        [Key]
         public int Id { get; set; }
+
+        [Required]
+        [StringLength(50)]
         public string FirstName { get; set; }
+
+        [Required]
+        [StringLength(50)]
         public string LastName { get; set; }
+
+        [Required]
+        [Phone]
+        [StringLength(20)]
         public string PhoneNumber { get; set; }
+
+        [Required]
+        [EmailAddress]
+        [StringLength(100)]
         public string Email { get; set; }
 
-        //  Фильтры поиска недвижимости 
-        public decimal? MinPrice { get; set; }      // Диапазон бюджета
-        public decimal? MaxPrice { get; set; }
-        public string PreferredDistrict { get; set; } // Желаемый район
-        public int? MinRooms { get; set; }            // Мин. количество комнат
-        public string PropertyType { get; set; }      // Квартира, Дом, Коммерция
+        [Column(TypeName = "decimal(18,2)")]
+        public decimal? MinPrice { get; set; }
 
-        // Статус 
-        public string Status { get; set; } // "Активный поиск", "Купил", "Передумал"
-        public DateTime RegistrationDate { get; set; }
+        [Column(TypeName = "decimal(18,2)")]
+        public decimal MaxPrice { get; set; }
 
-        // Связь с исполнителем
-        public int? AdministratorId { get; set; } // Какой админ ведет этого клиента
+        [StringLength(100)]
+        public string PreferredDistrict { get; set; }
+
+        public int? MinRooms { get; set; }
+
+        [StringLength(50)]
+        public string PropertyType { get; set; }
+
+        [Required]
+        [StringLength(50)]
+        public string Status { get; set; } = "Активный поиск";
+
+        public DateTime RegistrationDate { get; set; } = DateTime.UtcNow;
+
+        public int? AdministratorId { get; set; }
+
+        [ForeignKey("AdministratorId")]
+        [JsonIgnore]
+        public virtual Admin Administrator { get; set; }
+
+        public string Notes { get; set; }
+
+        public bool IsActive { get; set; } = true;
     }
 }

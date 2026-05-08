@@ -1,35 +1,76 @@
-﻿using System.Xml;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace Rieltors.API.Models
 {
     public class Realtor
     {
+        [Key]
         public int Id { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string PhoneNumber { get; set; }
+
+        [Required]
+        [StringLength(100)]
+        public string FullName { get; set; }
+
+        [Required]
+        [EmailAddress]
+        [StringLength(100)]
         public string Email { get; set; }
 
-        // --- Учетные данные для входа в CRM/API -- (если у риелтора отдельный вход)
-        public string PasswordHash { get; set; }
+        [Required]
+        [Phone]
+        [StringLength(20)]
+        public string Phone { get; set; }
 
-        // --- Профессиональные данные ---
-        public string LicenseNumber { get; set; } // Номер лицензии/сертификата
-        public string Specialization { get; set; } // Специализация (Жилая, Коммерческая, Загородная)
-        public decimal CommissionRate { get; set; } // Ставка комиссии риелтора (например, 30% от сделки)
+        [Required]
+        [StringLength(50)]
+        public string LicenseNumber { get; set; }
 
-        //Статистика и статус 
-        public bool IsActive { get; set; } // Работает ли сейчас риелтор
-        public DateTime HireDate { get; set; }
-        public int SalesCount { get; set; } // Количество проведенных сделок (для рейтинга)
+        public int ExperienceYears { get; set; } = 0;
 
-        // Связи (Navigation Properties) 
-        // Какие сделки провел этот риелтор?
-        public virtual List<Deal> Deals { get; set; }
+        public double Rating { get; set; } = 0;
 
-        // Какие объекты недвижимости находятся у него в работе?
-        public virtual List<RealEstate> Properties { get; set; }
-        // Кто является его начальником (если у вас есть иерархия)?
-        public int? AdministratorId { get; set; }
+        public int CompletedDeals { get; set; } = 0;
+
+        public DateTime HireDate { get; set; } = DateTime.UtcNow;
+
+        [StringLength(100)]
+        public string Specialization { get; set; }
+
+        [StringLength(500)]
+        public string PhotoUrl { get; set; }
+
+        public bool IsAvailable { get; set; } = true;
+
+        // Навигационные свойства
+        [JsonIgnore]
+        public virtual ICollection<Deal> Deals { get; set; }
+    }
+
+    // DTO для создания риелтора
+    public class CreateRealtorDto
+    {
+        [Required]
+        public string FullName { get; set; }
+
+        [Required]
+        [EmailAddress]
+        public string Email { get; set; }
+
+        [Required]
+        [Phone]
+        public string Phone { get; set; }
+
+        [Required]
+        public string LicenseNumber { get; set; }
+
+        public int ExperienceYears { get; set; }
+        public string Specialization { get; set; }
+    }
+
+    // DTO для обновления статуса риелтора
+    public class UpdateRealtorStatusDto
+    {
+        public bool IsAvailable { get; set; }
     }
 }

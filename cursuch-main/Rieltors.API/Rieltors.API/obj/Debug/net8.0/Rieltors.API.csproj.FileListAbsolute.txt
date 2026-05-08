@@ -41,3 +41,15 @@ C:\Users\228p\Desktop\Новая папка\cursuch-main\Rieltors.API\Rieltors.A
 C:\Users\228p\Desktop\Новая папка\cursuch-main\Rieltors.API\Rieltors.API\obj\Debug\net8.0\Rieltors.API.dll
 C:\Users\228p\Desktop\Новая папка\cursuch-main\Rieltors.API\Rieltors.API\obj\Debug\net8.0\refint\Rieltors.API.dll
 C:\Users\228p\Desktop\Новая папка\cursuch-main\Rieltors.API\Rieltors.API\obj\Debug\net8.0\Rieltors.API.pdb
+C:\Users\Вчеслав\Source\Repos\KURSOVAYA\cursuch-main\Rieltors.API\Rieltors.API\obj\Debug\net8.0\Rieltors.API.csproj.AssemblyReference.cache
+C:\Users\Вчеслав\Source\Repos\KURSOVAYA\cursuch-main\Rieltors.API\Rieltors.API\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\Вчеслав\Source\Repos\KURSOVAYA\cursuch-main\Rieltors.API\Rieltors.API\obj\Debug\net8.0\Rieltors.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Вчеслав\Source\Repos\KURSOVAYA\cursuch-main\Rieltors.API\Rieltors.API\obj\Debug\net8.0\Rieltors.API.AssemblyInfoInputs.cache
+C:\Users\Вчеслав\Source\Repos\KURSOVAYA\cursuch-main\Rieltors.API\Rieltors.API\obj\Debug\net8.0\Rieltors.API.AssemblyInfo.cs
+C:\Users\Вчеслав\Source\Repos\KURSOVAYA\cursuch-main\Rieltors.API\Rieltors.API\obj\Debug\net8.0\Rieltors.API.csproj.CoreCompileInputs.cache
+C:\Users\Вчеслав\Source\Repos\KURSOVAYA\cursuch-main\Rieltors.API\Rieltors.API\obj\Debug\net8.0\Rieltors.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Вчеслав\Source\Repos\KURSOVAYA\cursuch-main\Rieltors.API\Rieltors.API\obj\Debug\net8.0\Rieltors.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Вчеслав\Source\Repos\KURSOVAYA\cursuch-main\Rieltors.API\Rieltors.API\obj\Debug\net8.0\Rieltors.API.sourcelink.json
+C:\Users\Вчеслав\Source\Repos\KURSOVAYA\cursuch-main\Rieltors.API\Rieltors.API\obj\Debug\net8.0\Rieltors.API.dll
+C:\Users\Вчеслав\Source\Repos\KURSOVAYA\cursuch-main\Rieltors.API\Rieltors.API\obj\Debug\net8.0\refint\Rieltors.API.dll
+C:\Users\Вчеслав\Source\Repos\KURSOVAYA\cursuch-main\Rieltors.API\Rieltors.API\obj\Debug\net8.0\Rieltors.API.pdb

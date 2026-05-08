@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Rieltors.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1f694198d0aa4c9536118e4d21da9a55f2024afd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+99316643705db3bce77d58ed1120e007b55b1730")]
 [assembly: System.Reflection.AssemblyProductAttribute("Rieltors.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Rieltors.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
